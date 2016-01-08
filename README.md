@@ -1,9 +1,12 @@
 # Airflow Dockerfile
-Circle CI : [![](https://circleci.com/gh/puckel/docker-airflow.svg?style=svg)](https://circleci.com/gh/puckel/docker-airflow)
 
-ImageLayers : [![](https://badge.imagelayers.io/puckel/docker-airflow:latest.svg)](https://imagelayers.io/?images=puckel/docker-airflow:latest)
+NOTE: This repository is a fork of [puckel/airflow](https://github.com/puckel/docker-airflow), but uses PostgreSQL and Redis instead of MySQL and RabbitMQ.
 
-This repository contains **Dockerfile** of [airflow](https://github.com/airbnb/airflow) for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/puckel/docker-airflow/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
+Circle CI : [![](https://circleci.com/gh/jwmarshall/docker-airflow.svg?style=svg)](https://circleci.com/gh/jwmarshall/docker-airflow)
+
+ImageLayers : [![](https://badge.imagelayers.io/jwmarshall/docker-airflow:latest.svg)](https://imagelayers.io/?images=jwmarshall/docker-airflow:latest)
+
+This repository contains **Dockerfile** of [airflow](https://github.com/airbnb/airflow) for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/jwmarshall/docker-airflow/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
 
 ## Informations
 
@@ -14,23 +17,23 @@ This repository contains **Dockerfile** of [airflow](https://github.com/airbnb/a
 
 ## Installation
 
-        docker pull puckel/docker-airflow
+        docker pull jwmarshall/docker-airflow
 
 ## Build
 
 For example, if you need to install [Extra Packages](http://pythonhosted.org/airflow/installation.html#extra-package), edit the Dockerfile and than build-it.
 
-        docker build --rm -t puckel/docker-airflow .
+        docker build --rm -t jwmarshall/docker-airflow .
 
 # Usage
 
-Start the stack (mysql, rabbitmq, airflow-webserver, airflow-scheduler airflow-flower & airflow-worker) :
+Start the stack (postgresql, redis, airflow-webserver, airflow-scheduler airflow-flower & airflow-worker) :
 
         docker-compose up -d
 
 If you want to use Ad hoc query, make sure you've configured connections :
-Go to Admin -> Connections and Edit "mysql_default" set this values (equivalent to values in airflow.cfg/docker-compose.yml) :
-- Host : mysql
+Go to Admin -> Connections and Edit "postgresql_default" set this values (equivalent to values in airflow.cfg/docker-compose.yml) :
+- Host : postgres
 - Schema : airflow
 - Login : airflow
 - Password : airflow
