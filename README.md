@@ -1,6 +1,6 @@
 # Airflow Dockerfile
 
-NOTE: This repository is a fork of [puckel/airflow](https://github.com/puckel/docker-airflow), but uses PostgreSQL and Redis instead of MySQL and RabbitMQ.
+NOTE: This repository is a fork of [puckel/docker-airflow](https://github.com/puckel/docker-airflow), but uses PostgreSQL and Redis instead of MySQL and RabbitMQ.
 
 Circle CI : [![](https://circleci.com/gh/jwmarshall/docker-airflow.svg?style=svg)](https://circleci.com/gh/jwmarshall/docker-airflow)
 
