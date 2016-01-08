@@ -1,8 +1,8 @@
 # VERSION 1.6.2
 # AUTHOR: Matthieu "Puckel_" Roisil
 # DESCRIPTION: Basic Airflow container
-# BUILD: docker build --rm -t puckel/docker-airflow
-# SOURCE: https://github.com/puckel/docker-airflow
+# BUILD: docker build --rm -t jwmarshall/docker-airflow
+# SOURCE: https://github.com/jwmarshall/docker-airflow
 
 FROM debian:wheezy
 MAINTAINER Puckel_
