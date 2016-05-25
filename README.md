@@ -17,13 +17,13 @@ This repository contains **Dockerfile** of [airflow](https://github.com/airbnb/a
 
 ## Installation
 
-        docker pull jwmarshall/docker-airflow
+        docker pull youyu/docker-airflow
 
 ## Build
 
 For example, if you need to install [Extra Packages](http://pythonhosted.org/airflow/installation.html#extra-package), edit the Dockerfile and than build-it.
 
-        docker build --rm -t jwmarshall/docker-airflow .
+        docker build --rm -t youyu/docker-airflow .
 
 # Usage
 
