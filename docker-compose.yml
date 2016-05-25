@@ -15,7 +15,7 @@ redis:
         - "6379:6379"
 
 webserver:
-    image: jwmarshall/docker-airflow
+    image: youyu/docker-airflow
     restart: always
     # volumes:
     #     - /localpath/to/dags:/usr/local/airflow/dags
@@ -31,7 +31,7 @@ webserver:
     command: webserver
 
 flower:
-    image: jwmarshall/docker-airflow
+    image: youyu/docker-airflow
     restart: always
     environment:
         - AIRFLOW_HOME=/usr/local/airflow
@@ -42,7 +42,7 @@ flower:
     command: flower
 
 scheduler:
-    image: jwmarshall/docker-airflow
+    image: youyu/docker-airflow
     restart: always
     # volumes:
     #     - /localpath/to/dags:/usr/local/airflow/dags
@@ -54,7 +54,7 @@ scheduler:
     command: scheduler
 
 worker:
-    image: jwmarshall/docker-airflow
+    image: youyu/docker-airflow
     restart: always
     # volumes:
     #     - /localpath/to/dags:/usr/local/airflow/dags
