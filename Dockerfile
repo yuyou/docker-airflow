@@ -13,7 +13,7 @@ MAINTAINER Yu You
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM linux
 ENV INITRD No
-ENV AIRFLOW_VERSION 1.7.0
+ENV AIRFLOW_VERSION 1.7.1.3
 ENV AIRFLOW_HOME /usr/local/airflow
 ENV PYTHONLIBPATH /usr/lib/python2.7/dist-packages
 
